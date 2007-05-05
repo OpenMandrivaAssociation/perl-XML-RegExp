@@ -3,7 +3,7 @@
 Summary:	XML::RegExp - regular expressions for XML tokens
 Name:		perl-%{real_name}
 Version:	0.03
-Release: %mkrel 3
+Release: %mkrel 4
 License:	GPL or Artistic
 Group:		Development/Perl
 URL:		http://search.cpan.org/dist/%{real_name}
@@ -25,6 +25,8 @@ NameChar, EntityRef, CharRef, Reference, Name, NmToken, and AttValue.
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
 %make
+
+%check
 make test
 
 %install

@@ -12,6 +12,7 @@ BuildRequires:	perl-devel
 BuildArch:	noarch
 Provides:	perl-libxml-enno
 Obsoletes:	perl-libxml-enno
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 This package contains regular expressions for the following XML

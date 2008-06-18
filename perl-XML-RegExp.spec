@@ -3,7 +3,7 @@
 Summary:	XML::RegExp - regular expressions for XML tokens
 Name:		perl-%{real_name}
 Version:	0.03
-Release: %mkrel 6
+Release: %mkrel 7
 License:	GPL or Artistic
 Group:		Development/Perl
 URL:		http://search.cpan.org/dist/%{real_name}

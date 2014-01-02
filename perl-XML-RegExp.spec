@@ -1,14 +1,14 @@
 %define modname	XML-RegExp
-%define modver	0.03
+%define modver 0.04
 
 Summary:	XML::RegExp - regular expressions for XML tokens
 Name:		perl-%{modname}
 Version:	%perl_convert_version %{modver}
-Release:	10
+Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{modname}
-Source0:	http://search.cpan.org/CPAN/authors/id/T/TJ/TJMATHER/%{modname}-%{modver}.tar.bz2
+Source0:	http://search.cpan.org/CPAN/authors/id/T/TJ/TJMATHER/XML-RegExp-%{modver}.tar.gz
 BuildArch:	noarch
 BuildRequires:	perl-devel
 
@@ -34,4 +34,5 @@ make test
 %doc Changes README
 %{perl_vendorlib}/XML/RegExp.pm
 %{_mandir}/man3/*
+
 

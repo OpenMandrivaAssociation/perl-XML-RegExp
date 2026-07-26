@@ -1,14 +1,12 @@
 %define modname	XML-RegExp
-%define modver 0.04
-
 Summary:	XML::RegExp - regular expressions for XML tokens
 Name:		perl-%{modname}
-Version:	%perl_convert_version %{modver}
-Release:	8
+Version:	0.04
+Release:	9
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{modname}
-Source0:	http://search.cpan.org/CPAN/authors/id/T/TJ/TJMATHER/XML-RegExp-%{modver}.tar.gz
+Url:		https://metacpan.org/dist/%{modname}
+Source0:	http://search.cpan.org/CPAN/authors/id/T/TJ/TJMATHER/XML-RegExp-%{version}.tar.gz
 BuildArch:	noarch
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -19,7 +17,7 @@ tokens:	BaseChar, Ideographic, Letter, Digit, Extender, CombiningChar,
 NameChar, EntityRef, CharRef, Reference, Name, NmToken, and AttValue.
 
 %prep
-%setup -qn %{modname}-%{modver}
+%setup -qn %{modname}-%{version}
 
 %build
 %__perl Makefile.PL INSTALLDIRS=vendor
